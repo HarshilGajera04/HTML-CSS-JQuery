@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEB-SITE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Game</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="">Forums</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <i class="fa fa-bars" id="btn1" style="color: aliceblue;"></i>
+    <a href="" id="lr">Login/Register</a>
+  </div>
+</header>
+
+
+
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/slider-1.jpg" alt=""> </div>
+    <div class="swiper-slide"><img src="img/slider-2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/slider-1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/slider-2.jpg" alt=""></div>
+    <!-- <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div> -->
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+  <div class="autoplay-progress">
+    <svg viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="20"></circle>
+    </svg>
+    <span></span>
+  </div>
+</div>
+
+<!-- section start. -->
+
+
+<div class="news">
+  <div class="n-box">
+    <div>
+    <h1>Latest News</h1>
+  </div>
+  <div>
+    <marquee behavior="" direction="autoplayTimeLeft">
+      <p>Isum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: aliceblue; background-color: fuchsia; padding: 5px;"> New</span> &nbsp;&nbsp;&nbsp; Isum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: aliceblue; background-color:steelblue; padding: 5px;">RACING</span>
+        &nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;&nbsp;<span style="color: aliceblue; background-color:seagreen; padding: 5px;"> STRATEGY</span>
+      </p>
+     
+    </marquee>
+  </div>
+</div>
+</div>
+
+<!-- section done. -->
+
+
+<!-- feature section start. -->
+<section class="feature">
+  <div class="f-box">
+    <div class="f-a">
+      <br><br>
+     <span>NEW</span>
+      <h2>Suspendisse ut justo tem por, rutrum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+    <div class="f-b">
+      <br><br>
+      <span>STRATEGY</span>
+      <h2>Justo tempor, rutrum erat id, molestie
+      </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+    <div class="f-c">
+      <br><br>
+      <span>NEW</span>
+      <h2>Nullam lacinia ex eleifend orci porttitor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+    <div class="f-d">
+      <br><br>
+      <span>RACING</span>
+      <h2>Lacinia ex eleifend orci suscipit</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+  </div>
+</section>
+
+
+<!-- feature section done. -->
+
+
+<section class="game">
+  <center><br>
+    <span>NEW</span>
+  <h1>Recent Games</h1></center>
+  <div class="g-box">
+    <div class="g-a">
+      <div class="a-img">
+        <br><br>
+        <span>NEW</span>
+      </div>
+      <div></div>
+
+      <h2>Suspendisse ut justo tem por, rutrum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+    
+    
+    
+    <div class="g-b">
+      <div class="b-img">
+        <br><br>
+        <span>RACING</span>
+      </div>
+      <div>
+
+      <h2>Suspendisse ut justo tem por, rutrum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+    </div>
+    <div class="g-c">
+      <div class="c-img">
+        <br><br>
+        <span>ADVENTURE</span>
+      </div>
+      <div></div>
+
+      <h2>Suspendisse ut justo tem por, rutrum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h6>3 Comments</h6>
+    </div>
+    </div>
+   
+  </div> 
+</section>
+
+
+
+<!-- Tournaments section start. -->
+
+
+<section class="tournament">
+  <!-- <h1>sds</h1> -->
+  <div class="t-box">
+    
+      <div class="t-img">
+        <div class="img">
+          <img src="img/recent-game/4.jpg" alt="" srcset="">
+        <!-- </div> -->
+        <div class="t-txt"> 
+          <h2>World Of WarCraft</h2><br>
+          <p>Tournament Beggins: <span>June 20, 2018</span></p>
+          <p>Tounament Ends: <span>July 01, 2018</span></p>
+          <p>Participants: <span>10 teams</span></p>
+          <p>Tournament Author: <span>Admin          </span></p>
+          <p id="p"><span> Prizes:</span>1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+        </div>
+      </div>
+</div>
+</div>
+      <div class="t-box">
+    
+        <div class="t-img">
+          <div class="img">
+            <img src="img/recent-game/3.jpg" alt="" srcset="">
+          <!-- </div> -->
+          <div class="t-txt"> 
+            <h2>DOOM</h2><br>
+            <p>Tournament Beggins: <span>June 20, 2018</span></p>
+            <p>Tounament Ends: <span>July 01, 2018</span></p>
+            <p>Participants: <span>10 teams</span></p>
+            <p>Tournament Author: <span>Admin          </span></p>
+            <p id="p"><span> Prizes:</span>1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+          </div>
+        </div>
+  </div>
+</div>
+</section>
+<!-- Tournaments section done. -->
+
+
+<!-- Review section start. -->
+
+<section class="review">
+  <div class="r-box">
+    <div class="r-img">
+      <img src="img/review/1.jpg" alt="" srcset="">
+      <center><h1>Assasin’’s Creed</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p></center>
+    </div>
+    <div class="r-img">
+      <img src="img/review/2.jpg" alt="" srcset="">
+      <center><h1>Doom</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p></center>
+    </div>
+    <div class="r-img">
+      <img src="img/review/3.jpg" alt="" srcset="">
+      <center><h1>Overwatch</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p></center>
+    </div>
+    <div class="r-img">
+      <img src="img/review/4.jpg" alt="" srcset="">
+      <center><h1>GTA</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p></center>
+    </div>
+  </div>
+</section>
+
+<!-- Review section end. -->
+
+  
+<section class="lazy slider" data-sizes="50vw">
+  <div>
+    <img src="img/page-top-bg/1.jpg">
+  </div>
+  <div>
+    <img src="img/page-top-bg/2.jpg">
+  </div>
+  <div>
+    <img src="img/page-top-bg/3.jpg">
+  </div>
+  <div>
+    <img src="img/page-top-bg/4.jpg">
+  </div>
+  <div>
+    <img src="img/page-top-bg/5.jpg">
+  </div>
+ 
+</section>
+
+
+<!-- footer section start. -->
+  <footer>
+    <div class="footer">
+      <div>
+        <img src="img/footer-logo.png" alt="" class="ll">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+        <img src="img/footer-top-bg.png" alt="">
+      </div>
+    </div>
+    <div class="footer">
+      <div class="comment">
+         <center>
+          <h1>Authors</h1>
+          <img src="img/authors/1.jpg" alt="">
+          <img src="img/authors/2.jpg" alt="">
+          <img src="img/authors/3.jpg" alt="" srcset="">
+          <img src="img/authors/4.jpg" alt="">
+          <img src="img/authors/5.jpg" alt="">
+          <img src="img/authors/6.jpg" alt="">
+          <img src="img/authors/7.jpg" alt="">
+          <!-- <img src="img/authors/8.jpg" alt=""> -->
+         </center>
+      </div>
+    </div>
+    <div class="footer">
+     
+      <div class="post"> 
+        <center>
+        <h1>LATEST POST</h1>
+        <img src="img/latest-blog/1.jpg" alt=""><br>
+        <img src="img/latest-blog/2.jpg" alt="" srcset=""><br>
+        <img src="img/latest-blog/3.jpg" alt="" srcset="">
+      </center>
+      </div>
+    </div>
+  </footer>
+
+<!-- footer section done. -->
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+
+
+
+    $(document).on('ready', function() {
+      
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+</script>
+
+</body>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+</body>
+<script>
+  $(document).ready(function(){
+      $("#btn1").click(function(){
+          $("nav").toggle();
+      });
+     
+  });
+</script>
+</html>
