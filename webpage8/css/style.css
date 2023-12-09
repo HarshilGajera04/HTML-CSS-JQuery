@@ -1,0 +1,1080 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #000000d7;
+    }
+    .header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo{
+        width: auto;
+        height: auto;
+        background-color: none;
+    }
+    .logo img{
+        background-color: none;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a{
+        text-decoration: none;
+        padding: 10px;
+        color: #eee;
+    }
+    nav ul li a:hover{
+        color: #27ae60;
+    }
+
+    .introduction{
+        width: 100%;
+        height: 90vh;
+
+        margin-top: 5%;
+    }
+    .introduction h1{
+        font-size: 40px;
+        color: #27ae60;
+    }
+    .intro-box{
+        width: 80%;
+        height: 70vh;
+
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 10%;
+        align-items: center;
+    }
+    .intro-img{
+        width: 45%;
+        height: 70vh;
+    }
+    .intro-img img{
+        width: 450px;
+        height: 500px;
+    }
+    .intro-txt{
+        width: 60%;
+        height: 70vh;
+
+    }
+    .intro-txt h1{
+        font-size: 40px;
+    }
+    .intro-txt p{
+        width: 70%;
+    }
+
+    .feature{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid black;
+        background-color: beige;
+    }
+    .f-box{
+        width: 80%;
+        height: 80vh;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: bisque;
+    }
+    
+    .f-img{
+        width: 30%;
+    }
+    .f-img:hover{
+        border: 2px solid green;
+    }
+   
+    .course{
+        width: 100%;
+        height: 100vh;
+
+    }
+    .course h2{
+        font-size: 50px;
+        color: #27ae60;
+    }
+    .c-box{
+        width: 80%;
+        height: 80vh;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .c-img{
+        width: 30%;
+        height: 70vh;
+        border: 1px solid black;
+    }
+    .c-img img{
+        width: 100%;
+    }
+
+    .c-img h1{
+        margin-top: 6%;
+        font-size: 30px;
+    }
+    .c-img p{
+        font-size: 18px;
+        margin-bottom: 10%;
+    }
+    .c-img a{
+        text-decoration: none;
+        color: #eee;
+        padding: 10px;
+        font-size: large;
+        background: #27ae60;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .c-img:hover{
+        transform: scale(1.1);
+    }
+
+    .programs{
+        width: 100%;
+        height: 130vh;
+        /* margin-top: 9%; */
+
+    }
+    .programs h2{
+        font-size: 40px;
+        color: #27ae60;
+    }
+    .p-box{
+        width: 80%;
+        height: 100vh;
+        margin-left: 10%;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .a{
+        width: 30%;
+        height: 300px;
+
+        background-image: linear-gradient(rgba(11, 184, 45, 0.8),rgba(22, 161, 59, 0.8)) , url(../images/programs_img_1.jpg);
+        background-size: cover;
+    }
+    .b{
+        width: 30%;
+        height: 300px;
+
+        background-size: cover;
+        background-image: linear-gradient(rgba(11, 184, 45, 0.8),rgba(22, 161, 59, 0.8)) , url(../images/programs_img_2.jpg);
+    }
+    .a , .b , .c , .d , .e , .f ,.g h1{
+        color: aliceblue;
+        font-size: 40px;
+        text-align: center;
+    }
+    .c{
+        width: 30%;
+        height: 300px;
+
+        background-size: cover;
+        background-image: linear-gradient(rgba(11, 184, 45, 0.8),rgba(22, 161, 59, 0.8)) , url(../images/programs_img_3.jpg);
+    }
+    .d{
+        width: 30%;
+        height: 300px;
+
+        background-size: cover;
+        background-image: linear-gradient(rgba(11, 184, 45, 0.8),rgba(22, 161, 59, 0.8)), url(../images/programs_img_4.jpg);
+    }
+    .e{
+        width: 30%;
+        height: 300px;
+
+        background-size: cover;
+        background-image:linear-gradient(rgba(11, 184, 45, 0.8),rgba(22, 161, 59, 0.8)), url(../images/programs_img_5.jpg);
+    }
+    .f{
+        width: 30%;
+        height: 300px;
+        border: 1px solid black;
+        background-size: cover;
+        background-image: linear-gradient(rgba(11, 184, 45, 0.8),rgba(22, 161, 59, 0.8)) , url(../images/programs_img_6.jpg);
+    }
+
+
+
+    
+    .hi-slide { position: relative; width: 754px; height: 292px; margin: 115px auto 0; }
+            
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev 
+                { position: absolute;
+                  top: 50%; 
+                  width: 40px;
+                  height: 40px; 
+                  margin-top: -20px;     
+                    border-radius: 50px; 
+                     
+                    
+                  line-height: 40px;
+                  text-align: center; 
+                  cursor: pointer;
+                  background-color: #fff; 
+                  color: black;               
+                  transition: all 0.6s;
+                  font-size: 20px; 
+                    font-weight: bold;
+                }
+               .hi-slide .hi-next:hover, 
+                .hi-slide .hi-prev:hover 
+                {
+                opacity: 1; 
+                background-color: #fff;  
+                }
+                
+               .hi-slide .hi-prev { left: -60px; }
+                
+        .hi-slide .hi-prev::before { content: '<'; }
+        .hi-slide .hi-next { right: -60px; }
+        .hi-slide .hi-next::before { content: '>'; }
+        
+                .hi-slide > ul
+                        { 
+                            list-style: none; 
+                            position: relative;
+                            width: 754px; 
+                            height: 292px; 
+                            margin: 0;
+                            padding: 0;
+                }
+                
+                
+            .hi-slide > ul > li {
+                overflow: hidden; 
+                position: absolute; 
+                z-index: 0; 
+                left: 377px;
+                top: 146px; 
+                width: 0; 
+                height: 0; 
+                margin: 0; 
+                padding: 0;
+                border: 3px solid #fff;              
+                background-color: #333; 
+                cursor: pointer; }
+                
+            .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
+
+            
+
+
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+.co-box{
+    width: 100%;
+    height: 80vh;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.co-img img{
+    width: 400px;
+    height: 400px;
+}
+.co-txt input{
+    width: 400px;
+    height: 40px;
+}
+.co-txt textarea{
+    width: 400px;
+}
+.co-txt button{
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 20px;
+    color: #eee;
+    background-color: #27ae60;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(50, 49, 49);
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.abt{
+    width: 25%;
+    height: 250px;
+
+}
+.abt h1{
+color: whitesmoke;
+}
+.abt p{
+    margin-top: 4%;
+    width: 50%;
+color: lightslategrey;
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(179, 162, 162);
+}
+.a-photo{
+    width: 30%;
+    height: 300px;
+
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.a-img{
+    /* border: 3px solid red; */
+    width: 100px;
+    height: 100px;
+    margin-top: 3%;
+    display: inline-block;
+}
+.a-photo img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.a-photo h1{
+    color: wheat;
+}
+
+header .fa{
+    color: #eee;
+    display: none;
+}
+
+
+
+@media (min-width:720px) and (max-width:980px)
+{
+    header{
+        width: auto;
+        height: 100px;
+        /* position: relative; */
+    }
+    .header{
+        /* width: auto; */
+        margin-bottom: 110px;
+ 
+    }
+    /* #btn{
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+       
+       } */
+    
+      
+
+       .introduction{
+        width: auto;
+        height: auto;
+       }
+       .intro-box{
+        width: auto;
+        height: auto;
+       
+        margin: 0;
+       }
+       .intro-img{
+        width: auto;
+        height: auto;
+       }
+       .intro-img img{
+        width: 300px;
+        height: 400px;
+
+       }
+       .feature{
+        width: auto;
+        height: auto;
+       }
+       .f-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+     flex-wrap: wrap;
+       }
+       .f-img{
+        width: 50%;
+       }
+       .course{
+        width: auto;
+        height: auto;
+       }
+       .c-box{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 0;
+       }
+       .c-img{
+        width: 40%;
+        height: auto;
+       }
+       .programs{
+        width: auto;
+        height: auto;
+       }
+       .p-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+    flex-wrap: wrap;
+       }
+       .a , .b ,.c,.d ,.e,.f,.g{
+        width: 50%;
+        /* height: 100%; */
+       }
+       .e{
+        width: 49%;
+       }
+
+       .slide{
+        width: 50%;
+        height: auto;
+        display: none;
+       }
+
+       .contact{
+        width: auto;
+        height: auto;
+       }
+       .co-box{
+        width: auto;
+        height: auto;
+        
+       }
+       .co-txt input{
+        width: 200px;
+        height: 30px;
+       }
+       .co-txt textarea{
+        width: 200px;
+        height: 30px;
+       }
+       .co-img{
+        width: auto;
+        height: auto;
+       }
+       .co-img iframe{
+        width: 300px;
+        height: 300px;
+       }
+       footer{
+        width: auto;
+        height: auto;
+        text-align: center;
+       }
+       .footer{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+       }
+       .abt{
+        width: 100%;
+        text-align: center;
+       }
+       .abt p{
+        width: 100%;
+
+        text-align: center;
+       }
+       .a-photo{
+
+        width: auto;
+        height: auto;
+       }
+    }
+
+@media (min-width:480px) and (max-width:720px)
+{
+    header{
+        width: auto;
+        height: 100px;
+        position: relative;
+    }
+    .header{
+        /* width: auto; */
+        margin-bottom: 110px;
+ 
+    }
+    #btn{
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+       
+       }
+    
+       nav{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        display: none;
+        background:rgb(39, 35, 39);
+        color: #ccc2c2;
+        /* display: block;   */
+       }
+       nav ul li{
+        display: block;
+       }
+       nav ul li a{
+        color: #ccc2c2;
+        padding: 15px;
+       }
+
+       .swiper{
+        margin-top: 20%;
+        width: auto;
+        height: auto;
+       }
+
+       .introduction{
+        width: auto;
+        height: auto;
+       }
+       .intro-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+       }
+       .intro-img{
+        width: auto;
+        height: auto;
+       }
+       .intro-img img{
+        width: 200px;
+        height: 200px;
+
+       }
+       .feature{
+        width: auto;
+        height: auto;
+       }
+       .f-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+     flex-wrap: wrap;
+       }
+       .f-img{
+        width: 50%;
+       }
+       .course{
+        width: auto;
+        height: auto;
+       }
+       .c-box{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 0;
+       }
+       .c-img{
+        width: 40%;
+        height: auto;
+       }
+       .programs{
+        width: auto;
+        height: auto;
+       }
+       .p-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+    flex-wrap: wrap;
+       }
+       .a , .b ,.c,.d ,.e,.f,.g{
+        width: 50%;
+        /* height: 100%; */
+       }
+       .e{
+        width: 49%;
+       }
+
+       .slide{
+        width: 50%;
+        height: auto;
+        display: none;
+       }
+
+       .contact{
+        width: auto;
+        height: auto;
+       }
+       .co-box{
+        width: auto;
+        height: auto;
+        
+       }
+       .co-txt input{
+        width: 200px;
+        height: 30px;
+       }
+       .co-txt textarea{
+        width: 200px;
+        height: 30px;
+       }
+       .co-img{
+        width: auto;
+        height: auto;
+       }
+       .co-img iframe{
+        width: 300px;
+        height: 300px;
+       }
+       footer{
+        width: auto;
+        height: auto;
+        text-align: center;
+       }
+       .footer{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+       }
+       .abt{
+        width: 100%;
+        text-align: center;
+       }
+       .abt p{
+        width: 100%;
+
+        text-align: center;
+       }
+       .a-photo{
+
+        width: auto;
+        height: auto;
+       }
+    }
+@media (min-width:360px) and (max-width:480px)
+{
+    header{
+        width: auto;
+        height: 100px;
+        position: relative;
+    }
+    .header{
+        /* width: auto; */
+        margin-bottom: 110px;
+ 
+    }
+    #btn{
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+       
+       }
+    
+       nav{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        display: none;
+        background:rgb(39, 35, 39);
+        color: #ccc2c2;
+        /* display: block;   */
+       }
+       nav ul li{
+        display: block;
+       }
+       nav ul li a{
+        color: #ccc2c2;
+        padding: 15px;
+       }
+
+       .swiper{
+        margin-top: 40%;
+        width: auto;
+        height: auto;
+       }
+
+       .introduction{
+        width: auto;
+        height: auto;
+       }
+       .intro-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+       }
+       .intro-img{
+        width: auto;
+        height: auto;
+       }
+       .intro-img img{
+        width: 200px;
+        height: 200px;
+
+       }
+       .feature{
+        width: auto;
+        height: auto;
+       }
+       .f-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+       }
+       .f-img{
+        width: 100%;
+       }
+       .course{
+        width: auto;
+        height: auto;
+       }
+       .c-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+       }
+       .c-img{
+        width: 100%;
+        height: auto;
+       }
+       .programs{
+        width: auto;
+        height: auto;
+       }
+       .p-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+       }
+       .a , .b ,.c,.d ,.e,.f,.g{
+        width: 100%;
+        height: auto;
+       }
+
+       .slide{
+        width: 50%;
+        height: auto;
+        display: none;
+       }
+
+       .contact{
+        width: auto;
+        height: auto;
+       }
+       .co-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+       }
+       .co-txt input{
+        width: 200px;
+        height: 30px;
+       }
+       .co-txt textarea{
+        width: 200px;
+        height: 30px;
+       }
+       .co-img{
+        width: auto;
+        height: auto;
+       }
+       .co-img iframe{
+        width: 300px;
+        height: 300px;
+       }
+       footer{
+        width: auto;
+        height: auto;
+        text-align: center;
+       }
+       .footer{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+       }
+       .abt{
+        width: 100%;
+        text-align: center;
+       }
+       .abt p{
+        width: 100%;
+
+        text-align: center;
+       }
+       .a-photo{
+
+        width: auto;
+        height: auto;
+       }
+    }
+
+@media (min-width:0px) and (max-width:360px)
+{
+    header{
+        width: auto;
+        height: 100px;
+        position: relative;
+    }
+    .header{
+        /* width: auto; */
+        margin-bottom: 110px;
+ 
+    }
+    #btn{
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+       
+       }
+    
+       nav{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        display: none;
+        background:rgb(39, 35, 39);
+        color: #ccc2c2;
+        /* display: block;   */
+       }
+       nav ul li{
+        display: block;
+       }
+       nav ul li a{
+        color: #ccc2c2;
+        padding: 15px;
+       }
+
+       .swiper{
+        margin-top: 40%;
+        width: auto;
+        height: auto;
+       }
+
+       .introduction{
+        width: auto;
+        height: auto;
+       }
+       .intro-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+       }
+       .intro-img{
+        width: auto;
+        height: auto;
+       }
+       .intro-img img{
+        width: 200px;
+        height: 200px;
+
+       }
+       .feature{
+        width: auto;
+        height: auto;
+       }
+       .f-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+       }
+       .f-img{
+        width: 100%;
+       }
+       .course{
+        width: auto;
+        height: auto;
+       }
+       .c-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+       }
+       .c-img{
+        width: 100%;
+        height: auto;
+       }
+       .programs{
+        width: auto;
+        height: auto;
+       }
+       .p-box{
+        width: auto;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+       }
+       .a , .b ,.c,.d ,.e,.f,.g{
+        width: 100%;
+        height: auto;
+       }
+
+       .slide{
+        width: 50%;
+        height: auto;
+        display: none;
+       }
+
+       .contact{
+        width: auto;
+        height: auto;
+       }
+       .co-box{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+       }
+       .co-txt input{
+        width: 200px;
+        height: 30px;
+       }
+       .co-txt textarea{
+        width: 200px;
+        height: 30px;
+       }
+       .co-img{
+        width: auto;
+        height: auto;
+       }
+       .co-img iframe{
+        width: 300px;
+        height: 300px;
+       }
+       footer{
+        width: auto;
+        height: auto;
+        text-align: center;
+       }
+       .footer{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+       }
+       .abt{
+        width: 100%;
+        text-align: center;
+       }
+       .abt p{
+        width: 100%;
+
+        text-align: center;
+       }
+       .a-photo{
+
+        width: auto;
+        height: auto;
+       }
+    }

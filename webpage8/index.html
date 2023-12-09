@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+    <title>webpage</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header"> 
+      <img src="images/logo.png" alt="">
+          <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Courses</a>
+                </li>
+                <li>
+                    <a href="">Teachers</a>
+                </li>
+                <li>
+                    <a href="">Programs</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+          </nav>
+          <i class="fa fa-list"  id="btn"></i>   
+        </div>
+
+    </header>
+
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/banner_bg_1.jpg" alt="" srcset="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner_bg_2.jpg" alt="" srcset="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner_bg_3.jpg" alt="" srcset="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner_bg_4.jpg" alt="" srcset="">
+          </div>
+          
+        </div>
+       
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+     
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+        });
+      </script>
+
+
+
+<section class="introduction">
+    <center>
+        <h1>INTRODUCTION</h1>
+    </center>
+    <div class="intro-box">
+        <div class="intro-img">
+            <img src="images/introduction_img.png" alt="">
+        </div>
+        <div class="intro-txt">
+            <h1>Education</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis impedit esse voluptates culpa non neque rerum pariatur dicta, officia dignissimos eligendi quos corrupti inventore libero?</p>
+            <h2>Learn Anything</h2>
+            <h2>Talk To Our Instructors</h2>
+            <h2>Speak With Others</h2>
+        </div>
+    </div>
+</section>
+
+
+<section class="feature">
+    <center><h1>FEATURE</h1></center>
+    <div class="f-box">
+        <div class="f-img">
+
+            <img src="images/features_icon_1.png" alt="">
+            <h1>Online Testing</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+        </div>
+        <div class="f-img">
+            <img src="images/features_icon_2.png" alt="">
+            <h1>Expert Professors</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+        </div>
+        <div class="f-img">
+            <img src="images/features_icon_3.png" alt="">
+            <h1>Trusted Certifications</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+        </div>
+        <div class="f-img">
+            <img src="images/features_icon_4.png" alt="">
+            <h1>Scientific Research</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+        </div>
+        <div class="f-img">
+            <img src="images/features_icon_5.png" alt="">
+            <h1>Audio Video course</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+        </div>
+        <div class="f-img">
+            <img src="images/features_icon_6.png" alt="">
+            <h1>Professional Courses</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+        </div>
+    
+
+    </div>
+</section>
+
+
+<section class="course">
+    <center>
+        <h2>COURSES</h2>
+    </center>
+    <div class="c-box">
+        <div class="c-img">
+            <img src="images/courses_img_1.png" alt="">
+            <h1>Web Design</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+           <center> <a href=""> Join Now</a></center>
+        </div>
+        <div class="c-img">
+            <img src="images/courses_img_2.png" alt="">
+            <h1>Photography</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+            <center> <a href=""> Join Now</a></center>
+        </div>
+        <div class="c-img">
+            <img src="images/courses_img_3.png" alt="">
+            <h1>Digital Marketing</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+            <center> <a href=""> Join Now</a></center>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="programs">
+    <center><h2>PROGRAMS</h2></center>
+    <div class="p-box">
+        <div class="a">
+            <h1>Pre-college education</h1>
+        </div>
+        <div class="b">
+            <h1>Middle School</h1>
+        </div>
+        <div class="c">
+            <h1>High School</h1>
+        </div>
+        <div class="d">
+            <h1>International exchange</h1>
+        </div>
+        <div class="e">
+            <h1>Graduate programs</h1>
+        </div>
+        <div class="f">
+            <h1>Home Education</h1>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="slide hi-slide">
+  
+    <center><h1>BLOG</h1></center>
+    <div class="hi-prev "></div>
+      <div class="hi-next "></div>
+      <ul>
+          <li>
+          <img src="images/blog_img_1.jpg" alt="Img 1" /></li>
+          <li><img src="images/blog_img_2.jpg" alt="Img 2" /></li>
+          <li><img src="images/blog_img_3.jpg" alt="Img 3" /></li>
+          <li><img src="images/blog_img_4.jpg" alt="Img 4" /></li>
+          <li><img src="images/blog_img_5.jpg" alt="Img 5" /></li>
+          <li><img src="images/blog_img_6.jpg" alt="Img 6" /></li>
+          <li>
+            <img src="images/blog_img_1.jpg" alt="Img 1" /></li>
+            <li><img src="images/blog_img_2.jpg" alt="Img 2" /></li>
+          <!-- <li><img src="https://images.pexels.com/photos/754448/pexels-photo-754448.jpeg?cs=srgb&dl=attractive-beautiful-beauty-754448.jpg&fm=jpg" alt="Img 7" /></li>
+          <li><img src="https://images.pexels.com/photos/761536/pexels-photo-761536.jpeg?cs=srgb&dl=attractive-beautiful-beauty-761536.jpg&fm=jpg" alt="Img 7" /></li> -->
+      </ul>
+  </div>
+  
+  
+  
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.hislide.js" ></script>
+  <script>
+      $('.slide').hiSlide();
+  </script>
+
+  <section class="contact">
+    <center><h2>CONTACT</h2></center>
+    <div class="co-box">
+        <div class="co-txt">
+         
+                <form action = "" method = "" class = "font-md text-center">
+                    <input type = "text" class = "form-control fw-6" placeholder="Full Name" name = "full_name"><br><br>
+                    <input type = "email" class = "form-control fw-6" placeholder="E-mail" name = "email"><br><br>
+                    <textarea rows = "5" class = "form-control fw-6" placeholder="Message" name = "message"></textarea><br><br>
+                    <button type = "submit" class = "btn bg-green">Send</button>
+                </form>
+           
+        </div>
+        <div class="co-img">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.47339855874!2d-0.24168085317947707!3d51.528558242069835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2snp!4v1639724107420!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+  </section>
+
+
+<!-- footer section start -->
+
+<footer>
+    <div class="footer">
+      <div class="f-logo">
+        <img src="images/logo.png" alt="">
+      </div >
+      <div class="abt">
+        <h1>ABOUT US</h1>
+        <p>inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
+      </div>
+      <div class="a-photo">
+        <h1>TEACHERS</h1>
+        <div class="a-img">
+          <img src="images/teachers_img_1.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_2.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_3.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_4.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_5.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_6.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_7.png" alt="">
+        </div>
+        <div class="a-img">
+          <img src="images/teachers_img_8.png" alt="">
+        </div>
+        </div>
+          <!-- <img src="img/i1.jpeg" alt="">
+          <img src="img/i1.jpeg" alt="">
+          <img src="img/i1.jpeg" alt="">
+          <img src="img/i1.jpeg" alt=""> -->
+        
+      </div>
+    </div>
+  
+  <h1 style="color: aliceblue;">Design By HARSHIL GAJERA</h1>
+  </footer>
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+  
+
+    $(document).on('ready', function() {
+    
+    $("#btn").click(function(){
+          $("nav").toggle();
+      });
+      // $("#b2").click(function(){
+      //   $("nav").hide();
+      // });
+    var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+   
+    $(".center").slick({
+      dots: true,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 5,
+      slidesToScroll: 4
+    });
+   
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true
+    });
+
+  
+  });
+</script>
+</html>
