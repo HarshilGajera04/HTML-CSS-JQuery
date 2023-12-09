@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <style type="text/css">
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 80%;
+        height: 300px;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      height: 150px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="header">
+      <div class="l">
+        <img src="img/logo-default-151x44.png" alt="">
+      </div>
+      <i class="fa fa-list"  id="btn"></i>
+      <!-- <i class="fa fa-times" id="b2"></i> -->
+      <nav>
+        <ul>
+          <li>
+            <a href="">HOME</a>
+          </li>
+          <li>
+            <a href="">ABOUT US.</a>
+          </li>
+          <li>
+            <a href="">TYPOGRAPHY </a>
+          </li>
+          <li>
+            <a href="">CONTECTS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header end -->
+
+  <!-- swipper class start -->
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/house-g6815ba237_1920.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/house-g16858cc1b_1280.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/large-home-gbd2c4b785_1280.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/san-francisco-g3e7f8c998_1920.jpg" alt="">
+      </div>
+      
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div> 
+
+<!-- swipper class end -->
+
+<!-- POPULAR PROPERTIES section strat -->
+ 
+<section class="property ">
+  <center>
+
+    <h1 style="font-size: 50px; margin-top: 4%; margin-bottom: 2%;">POPULAR PROPERTIES</h1>
+  <div class="p-box ">
+    <div class="p-img animate__animated animate__backInLeft">
+      <img src="img/i1.jpeg" alt="">
+      <div class="txt">
+        <h4> 5619 Walnut Hill Ln, Dallas, TX 75229</h4>
+        <h6>$1500/mon</h6>
+        <p>A comfortable residential property located in a quiet and cozy area.</p>
+      </div>
+    </div>
+    <div class="p-img animate__animated animate__backInLeft">
+      <img src="img/i2.jpeg" alt="">
+      <div class="txt">
+        <h4>1808 Bolingbroke Pl, Fort Worth.</h4>
+        <h6>$1300/mon</h6>
+        <p>Perfect for those who love both city life and the countryside.</p>
+      </div>
+    </div>
+    <div class="p-img animate__animated animate__backInLeft">
+      <img src="img/i3.jpeg" alt="">
+      <div class="txt">
+        <h4>924 Bel Air Rd, Los Angeles.</h4>
+        <h6>1800/mon</h6>
+        <p>Located in 5 mins from downtown, this property is great for anyone.</p>
+      </div>
+    </div>
+    <div class="p-img animate__animated animate__backInLeft">
+      <img src="img/i4.jpeg" alt="">
+      <div class="txt">
+        <h4>13510 W Cheery Lynn Rd, Avondale.</h4>
+        <h6>$2700/mon</h6>
+        <p>A luxury mansion for people who enjoy the high-end amenities.</p>
+      </div>
+    </div>
+    
+  </div></center>
+</section> 
+
+
+  <!-- POPULAR PROPERTIES section end -->
+  <section class="center slider">
+    <div>
+      <img src="img/i5.jpeg">
+    </div>
+    <div>
+      <img src="img/i6.jpeg">
+    </div>
+    <div>
+      <img src="img/i7.jpeg">
+    </div>
+    <div>
+      <img src="img/i8.jpeg">
+    </div>
+    <div>
+      <img src="img/apartment-g168ad553e_640.jpg">
+    </div>
+    <div>
+      <img src="img/wall-g122e06aef_640.jpg">
+    </div>
+    <div>
+      <img src="img/living-room-g8bce10418_640.jpg">
+    </div>
+    <div>
+      <img src="img/living-room-g0903ba0f2_640.jpg">
+    </div>
+    <div>
+      <img src="img/furniture-ge921e4247_640.jpg">
+    </div>
+  </section>
+
+
+  <!-- team section  start -->
+
+<section class="team ">
+  <center>
+    <h1 style="font-size: 40px; margin-top: 5%;">OUR TEAM</h1>
+  <div class="t-box">
+    <div class="t-img animate__animated animate__backInUp wow">
+      <img src="img/t1.jpeg" alt="">
+      <div class="t-txt">
+        <h1>Nathalie Porter</h1>
+        <h4>Founder, Broker</h4>
+        <p>Ms. Porter founded our company in 1989 with a vision to help guests and residents of the USA to easily find and buy or rent real estate in all 50 states.</p>
+      </div>
+    </div>
+    <div class="t-img animate__animated animate__backInUp wow">
+      <img src="img/t2.jpeg" alt="">
+      <div class="t-txt">
+        <h1>John Thompson</h1>
+        <h4>Sales Associate</h4>
+        <p>John has been in sales and marketing for the past 15 years. He has excellent knowledge about the local market both residential and commercial.</p>
+      </div>
+    </div>
+    <div class="t-img animate__animated animate__backInUp">
+      <img src="img/t3.jpeg" alt="">
+      <div class="t-txt">
+        <h1>Brian Payne</h1>
+        <h4>Realtor
+
+        </h4>
+        <p>Brian is not only a Licensed Realtor but also holds the Title Producers and Mortgage Licenses, which makes him a very knowledgeable real estate expert.</p>
+      </div>
+    </div>
+    <div class="t-img animate__animated animate__backInUp">
+      <img src="img/t4.jpeg" alt="">
+      <div class="t-txt">
+        <h1>Marie Fernandez</h1>
+        <h4>Broker        </h4>
+        <p>Marie’s goal is to provide clients with the highest level of marketing expertise and customer service to help them reach their uppermost real estate goals.</p>
+      </div>
+    </div>
+  </div></center>
+</section>
+
+<!-- team sectio done. -->
+
+
+<!-- footer section start -->
+
+<footer>
+  <div class="footer">
+    <div class="f-logo">
+      <img src="img/logo-default-151x44.png" alt="">
+    </div >
+    <div class="abt">
+      <h1>ABOUT US</h1>
+      <p>inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
+    </div>
+    <div class="a-photo">
+      <h1>GALLERY</h1>
+      <div class="a-img">
+        <img src="img/living-room-g0903ba0f2_640.jpg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/i2.jpeg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/i3.jpeg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/house-gfbda903f6_1920.jpg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/wall-g122e06aef_640.jpg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/living-room-g8bce10418_640.jpg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/house-g16858cc1b_1280.jpg" alt="">
+      </div>
+      <div class="a-img">
+        <img src="img/large-home-gbd2c4b785_1280.jpg" alt="">
+      </div>
+      </div>
+        <!-- <img src="img/i1.jpeg" alt="">
+        <img src="img/i1.jpeg" alt="">
+        <img src="img/i1.jpeg" alt="">
+        <img src="img/i1.jpeg" alt=""> -->
+      
+    </div>
+  </div>
+
+<h1 style="color: aliceblue;">Design By HARSHIL GAJERA</h1>
+</footer>
+
+<!-- footer section done -->
+
+
+
+  <!-- <div class="gallery">
+    <img src="img/i1.jpeg" alt="">
+    <img src="img/i1.jpeg" alt="">
+    <img src="img/i1.jpeg" alt="">
+    <img src="img/i1.jpeg" alt="">
+    <img src="img/i1.jpeg" alt="">
+    <img src="img/i1.jpeg" alt="">
+
+  </div> -->
+
+<script>
+  new wow().init()
+</script>
+
+</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+  
+
+    $(document).on('ready', function() {
+    
+    $("#btn").click(function(){
+          $("nav").toggle();
+      });
+      // $("#b2").click(function(){
+      //   $("nav").hide();
+      // });
+    var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+   
+    $(".center").slick({
+      dots: true,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 5,
+      slidesToScroll: 4
+    });
+   
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true
+    });
+
+  
+  });
+</script>
+
+</html>
